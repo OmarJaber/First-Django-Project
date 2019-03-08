@@ -19,7 +19,7 @@
 		<tbody>
 			{% for i in data %}
 				<tr>
-					<td>{{ forloop.counter }}</td>
+					<td><a href="http://localhost:8000/home/showfilter/{{ i.id }}" >{{ i.id }}</a></td>
 					<td>{{ i.name }}</td>
 					<td>{{ i.mobile }}</td>
 					<td>{{ i.address }}</td>

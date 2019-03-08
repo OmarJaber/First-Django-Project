@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import homepage,homepageadd,homepageshow
+from .views import homepage,homepageadd,homepageshow,homeshowfilter
 
 urlpatterns = [
     path('show/', homepageshow),
+    path('showfilter/<int:count>', homeshowfilter),
     path('add/', homepageadd),
 ]
